@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window {
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    background-color: #222222;
+    display: flex;
+    float: left;
+}
+.leftbar {
+    width: 320px;
+    height: 100%;
+    border-radius: 24px;
+    margin-right: 16px;
+    padding: 24px;
+    background-color: #111111;
+    float: left;
+}
+.hierarchy_content {
+    flex: 1;
+    height: 100%;
+    border-radius: 24px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.leftbar_header {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    float: left;
+}
+.logo_wrapper {
+    flex: 1;
+    float: left;
+}
+.logo {
+    width: 80px;
+}
+.account_button {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #343434;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account_button:hover {
+    cursor: pointer;
+    background-color: #454545;
+}
+.account_icon {
+    width: 24px;
+    fill: #f4f4f4;
+}
+.label {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #f4f4f4;
+    font-family: 'Aptos';
+    float: left;
+}
+.change_structure {
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    padding-left: 18px;
+    margin-bottom: 12px;
+    font-family: 'Aptos';
+    background-color: #343434;
+    color: #f4f4f4;
+    display: flex;
+    border: none;
+}
+.structure_title {
+    height: 100%;
+    font-size: 16px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.structure_icon_wrapper {
+    width: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.structure_icon {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4f4;
+}
+.add_object {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 12px;
+    font-family: 'Aptos';
+    background-color: #FF142F;
+    color: #f4f4f4;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.add_object:hover {
+    cursor: pointer;
+}
+.change_structure:hover {
+    cursor: pointer;
+    background-color: #454545;
+}
+.search {
+    width: 100%;
+    height: 48px;
+    padding-left: 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #666666;
+    background-color: #222222;
+    color: #f4f4f4;
+    caret-color: #FF142F;
+    font-family: 'Aptos';
+    outline: none;
+}
+.search:focus {
+    border: 1px solid #FF142F;
+}
+.scale_button_group {
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    float: left;
+}
+.plus_scale {
+    flex: 1;
+    height: 48px;
+    font-size: 16px;
+    margin-right: 0.5px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    background-color: #343434;
+    color: #f4f4f4;
+    font-family: 'Aptos';
+}
+.minus_scale {
+    flex: 1;
+    height: 48px;
+    font-size: 16px;
+    margin-left: 0.5px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    background-color: #343434;
+    color: #f4f4f4;
+    font-family: 'Aptos';
+}
+.plus_scale:hover, .minus_scale:hover {
+    cursor: pointer;
+    background-color: #454545;
+}
+.object_info {
+    width: 420px;
+    height: 100%;
+    margin-left: 16px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #111111;
+    float: left;
+}
+.object_info_header {
+    width: 100%;
+    flex: 1;
+    margin-bottom: 24px;
+    display: flex;
+    float: left;
+}
+.fio {
+    flex: 1;
+    font-size: 36px;
+    font-family: 'Aptos-Bold';
+    color: #f4f4f4;
+    float: left;
+}
+.close_object_info {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    transition: .2s;
+    background-color: #343434;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.close_object_info:hover {
+    background-color: #FF142F;
+    cursor: pointer;
+}
+.job_title {
+    width: 100%;
+    height: 48px;
+    padding-left: 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #666666;
+    background-color: #222222;
+    color: #f4f4f4;
+    font-family: 'Aptos';
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.job_comment {
+    width: 100%;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #666666;
+    background-color: #222222;
+    color: #f4f4f4;
+    font-family: 'Aptos';
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.belongs_to_structure {
+    width: 100%;
+    height: 48px;
+    padding-left: 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #666666;
+    background-color: #222222;
+    color: #f4f4f4;
+    font-family: 'Aptos';
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.close_icon {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4f4;
+}
+.links_group {
+    width: 100%;
+    float: left;
+}
+.link {
+    width: 100px;
+    height: 64px;
+    border-radius: 2rem;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    transition: .2s;
+    font-family: 'Aptos';
+    background-color: #343434;
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.link_icon {
+    transition: .2s;
+    width: 32px;
+    height: 32px;
+    fill: #f4f4f4;
+}
+.link:hover {
+    background-color: #454545;
+}
+.link:hover .link_icon {
+    fill: #FF142F;
+}
+.hierarchy_wrapper {
+    min-width: 1200px;
+    min-height: 1800px;
+    background: url(../images/dots.svg);
+    background-size: 32px;
+    background-color: #cccccc;
+    float: left;
+    user-select: none;
+    position: relative;
+}
+
+.hierarchy {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    z-index: 200;
+}
+.hierarchy_line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.hierarchy_block {
+    min-width: 160px;
+    min-height: 80px;
+    padding: 40px;
+    margin: 20px;
+    font-size: 16px;
+    border-radius: 24px;
+    transition: .2s;
+    color: #f4f4f4;
+    background-color: #111111;
+    border: 6px solid #111111;
+    font-family: 'Aptos';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.hierarchy_block:hover {
+    border: 6px solid #FF142F;
+    cursor: pointer;
+}
+.svgg {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    float: left;
+}
+.line {
+    stroke: black;
+    stroke-width: 2;
+}
