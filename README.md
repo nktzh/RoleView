@@ -1,7 +1,7 @@
 # RoleView
 
 
-![Image alt](https://github.com/nktzh/RoleView/RVl.png)
+![Image alt](RVl.png)
 
 Приложение наглядного представления иерархии компании.
 В репозитории представлен UI дизайн нашего приложения.
